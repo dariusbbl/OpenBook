@@ -1,9 +1,7 @@
 # OpenBook
 
+# Block Diagram
 
-
-
-## BOM - Bill of Materials
 
 # BOM (Bill Of Materials)
 
