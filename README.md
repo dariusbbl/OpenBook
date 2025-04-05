@@ -1,7 +1,7 @@
 # OpenBook
 
 # Block Diagram
-
+![Diagrama](/Images/Diagram.jpg)
 
 # BOM (Bill Of Materials)
 
