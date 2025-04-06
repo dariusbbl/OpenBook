@@ -10,38 +10,38 @@
 - **I/O Capabilities:** Supports multiple digital interfaces – SPI, I²C, UART, PWM, and general-purpose IO  
 - **Power Features:** Low-energy design with deep sleep functionality for battery-powered applications
 
-# Real-Time Clock – DS3231SN
+#### Real-Time Clock – DS3231SN
 - **Accuracy:** ±2 ppm  
 - **Communication:** I²C (`SDA`, `SCL`)  
 - **Backup Power:** Supercapacitor-based retention
 
-# E-Paper Display
+#### E-Paper Display
 - **Connection Method:** 20-pin dedicated header  
 - **Communication Protocol:** SPI + GPIO  
 - **Key Signals:** `EPD_CS`, `EPD_DC`, `EPD_RST`, `EPD_BUSY`, etc.  
 - **Advantages:** Zero power draw when idle, high readability in sunlight
 
-# MicroSD Card Slot
+#### MicroSD Card Slot
 - **Interface:** SPI (connected to IO4 through IO9)  
 - **Purpose:** Storing eBooks, setting and user configuration data  
 
-# Environmental Sensor – BME688
+#### Environmental Sensor – BME688
 - **Measurements:** Temperature, Humidity, Pressure and VOCs  
 - **Interface:** I²C  
 - **Pins:** `SDA` – IO1, `SCL` – IO2  
 - **Power Supply:** 3.3V  
 - **Default Address:** `0x76` 
 
-# Battery Fuel Gauge - MAX17048
+#### Environmental Sensor – BME688 Battery Fuel Gauge - MAX17048
 - **Role:** Estimates remaining charge in LiPo(Lithium Polymer) battery
 - **Protocol:** I²C (shared on IO1, IO2)  
 
-# I²C Expansion – Qwiic / Stemma QT
+#### Environmental Sensor – BME688 I²C Expansion – Qwiic / Stemma QT
 - **Connector:** 4-pin (3V3, GND, SDA, SCL)  
 - **Protocol:** I²C (`IO1`, `IO2`)  
 - **Compatibility:** Plug-and-play with Adafruit / SparkFun modules  
 
-# Voltage Supervisor – BD52xx
+#### Environmental Sensor – BME688 Voltage Supervisor – BD52xx
 - **Purpose:** Monitors voltage levels, triggers safe reset  
 - **Control Pin:** IO0 
 
