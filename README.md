@@ -3,6 +3,13 @@
 # Block Diagram
 ![Diagrama](/Images/Diagram.jpg)
 
+# Hardware Components
+## Microcontroller – ESP32-C6
+- **Core Architecture:** 32-bit RISC-V  
+- **Connectivity:** Wi-Fi 6, Bluetooth 5.0 LE  
+- **Peripheral Interfaces:** SPI, I²C, UART, PWM, GPIO  
+- **Power Optimization:** Deep sleep modes supported for ultra-low power usage  
+
 # BOM (Bill Of Materials)
 
 | Componenta | Link | Datasheet |
