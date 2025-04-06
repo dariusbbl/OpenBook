@@ -32,3 +32,11 @@
 | DS3231SN# | [Model](https://www.snapeda.com/parts/DS3231SN%23/Analog+Devices/view-part/?ref=eda) | [Datasheet](https://www.alldatasheet.com/view.jsp?Searchword=Ds3231sn%20datasheet&gad_source=1&gbraid=0AAAAADcdDU-Gy9URfMxGmqiPg7ci5L3wR&gclid=Cj0KCQjwqcO_BhDaARIsACz62vMkK3ETSnW2w7mo0Fa-wgWJGn89AxWCyIND6k5X8MmoPl6hv6VWwT8aAiS-EALw_wcB) |
 | MAX17048G+T10 | [Model](https://www.snapeda.com/parts/MAX17048G+T10/Analog+Devices/view-part/?ref=eda) | [Datasheet](https://www.alldatasheet.com/view.jsp?Searchword=Max17048&gad_source=1&gbraid=0AAAAADcdDU8aYfZtfJfdZ9I5j6RwZ_cbA&gclid=Cj0KCQjwqcO_BhDaARIsACz62vNa9xrVfzjCjADRwXD0RBbo4Nret3ywwteDGLJKZui8ZL8KdVlTE7caAvQxEALw_wcB) |
 | MCP73831T-5ACI/OT | [Model](https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP73831T-5ACI-OT?qs=hH%252BOa0VZEiAcgAcEkuamXg%3D%3D) | [Datasheet](//efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf) |
+
+# Decision & Modifications
+- To address the design checker errors, I adjusted the dimensions of several components.
+- The main components were positioned exactly according to the provided specifications to ensure a perfect match between the PCB dimensions and the case. Component placement was carefully planned to allow for efficient routing. The battery was placed in the remaining free space within the case.
+- A ground plane was created on both the top and bottom layers to improve signal integrity and reduce noise.
+- Routing was performed on both the top and bottom layers. Power traces were placed exclusively on the top layer to avoid the use of vias.
+- Diodes (SMD-Hole): The initial footprint included through-hole pads that were too narrow, potentially leading to soldering difficulties and poor connectivity. To address this, the pad dimensions were modified to 35 mil × 190 mil, improving both manufacturability and the reliability of the electrical contact.
+- U4 – MAX17048G+T10: The VBAT power trace was routed with a width of 0.3 mm due to design constraints. However, the original footprint featured pin widths of just 0.27 mm, which caused mismatches and disrupted routing symmetry. The pad widths were therefore increased to match the trace width, ensuring consistent routing and improved layout balance.
