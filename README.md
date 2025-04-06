@@ -4,7 +4,7 @@
 ![Diagrama](/Images/Diagram.jpg)
 
 # Hardware Components
-## Microcontroller – ESP32-C6
+#### Microcontroller – ESP32-C6
 - **Core Architecture:** 32-bit RISC-V processor  
 - **Wireless Support:** Integrated Wi-Fi 6 and Bluetooth Low Energy 5.0  
 - **I/O Capabilities:** Supports multiple digital interfaces – SPI, I²C, UART, PWM, and general-purpose IO  
