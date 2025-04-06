@@ -43,7 +43,12 @@
 
 #### Environmental Sensor – BME688 Voltage Supervisor – BD52xx
 - **Purpose:** Monitors voltage levels, triggers safe reset  
-- **Control Pin:** IO0 
+- **Control Pin:** IO0
+
+#### MCP73831 – Charging Controller
+- **Function:** LiPo charging via USB (3.7V)  
+- **Charging Current:** ~500 mA  
+- **Indicator:** Status LED  
 
 # BOM (Bill Of Materials)
 
