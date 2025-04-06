@@ -33,6 +33,20 @@
 | MAX17048G+T10 | [Model](https://www.snapeda.com/parts/MAX17048G+T10/Analog+Devices/view-part/?ref=eda) | [Datasheet](https://www.alldatasheet.com/view.jsp?Searchword=Max17048&gad_source=1&gbraid=0AAAAADcdDU8aYfZtfJfdZ9I5j6RwZ_cbA&gclid=Cj0KCQjwqcO_BhDaARIsACz62vNa9xrVfzjCjADRwXD0RBbo4Nret3ywwteDGLJKZui8ZL8KdVlTE7caAvQxEALw_wcB) |
 | MCP73831T-5ACI/OT | [Model](https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP73831T-5ACI-OT?qs=hH%252BOa0VZEiAcgAcEkuamXg%3D%3D) | [Datasheet](//efaidnbmnnnibpcajpcglclefindmkaj/https://ww1.microchip.com/downloads/en/DeviceDoc/MCP73831-Family-Data-Sheet-DS20001984H.pdf) |
 
+### Hardware Connections Overview  
+
+| **Peripheral**               | **Connected Pin(s)**                                             | **Protocol** | **Functionality Description** |
+|-----------------------------|------------------------------------------------------------------|--------------|-------------------------------|
+| **E-Paper Display**         | IO7 (MOSI), IO6 (SCK), IO10 (CS), IO5 (DC), IO23 (RST), IO3 (BUSY) | SPI          | Sends visual data and manages display operations. |
+| **MicroSD Card Module**     | IO7 (MOSI), IO6 (SCK), IO4 (SS_SD), IO2 (MISO)                   | SPI          | Enables saving and reading of e-book files. |
+| **BME688 Environmental Sensor** | IO21 (SDA), IO22 (SCL)                                        | I2C          | Measures environmental factors like temperature, humidity, pressure, and gas levels. |
+| **DS3231 RTC Module**       | IO21 (SDA), IO22 (SCL), IO18 (RST), IO1 (32KHz), IO0 (INT_RTC)   | I2C          | Maintains accurate timekeeping even when the main system is off. |
+| **External NOR Flash**      | IO11 (CS), IO6 (SCK), IO2 (MISO), IO7 (MOSI)                     | SPI          | Offers extra non-volatile memory for storing application-specific data. |
+| **Battery Status Monitor**  | IO21 (SDA), IO22 (SCL)                                           | I2C          | Monitors power level and battery condition. |
+| **USB-C Interface**         | GPIOs via regulated voltage lines                                | USB          | Supplies power and facilitates programming access. |
+| **User Input Buttons**      | IO9 (BOOT), IO15 (CHANGE), EN (RESET)                            | GPIO         | Detects user interaction through physical button presses. |
+
+
 # Decision & Modifications
 - To address the design checker errors, I adjusted the dimensions of several components.
 - The main components were positioned exactly according to the provided specifications to ensure a perfect match between the PCB dimensions and the case. Component placement was carefully planned to allow for efficient routing. The battery was placed in the remaining free space within the case.
